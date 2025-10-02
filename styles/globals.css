@@ -1,12 +1,21 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --accent: #22c55e;
-  --muted: #9ca3af;
+/* Default Light Theme */
+body {
+  @apply bg-gradient-to-b from-white via-gray-50 to-gray-100 text-black;
 }
 
-body { @apply bg-gradient-to-b from-slate-900 via-black to-slate-950 text-white; }
-.brand-logo { max-width: 360px; margin: 0 auto; display:block; }
+.brand-logo {
+  max-width: 360px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Dark Theme (auto if system is dark) */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gradient-to-b from-slate-900 via-black to-slate-950 text-white;
+  }
+}
