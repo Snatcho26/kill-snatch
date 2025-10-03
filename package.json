@@ -20,7 +20,7 @@
     "canvas-confetti": "^1.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.4"
+    "eslint": "^9.13.0",
+    "eslint-config-next": "^14.2.4"
   }
 }
